@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+    <div class="calculator__display">
+      <input class="calculator__display-input" id="input" type="text" placeholder="0" disabled>
+    </div>
+    <div class="calculator__buttons">
+      <input type="button" id="clear" value="AC">
+      <input type="button" id="erase" value="DEL">
+      <input type="button" class="calculator__input" value="/">
+      <input type="button" class="calculator__input" value="*">
+
+      <input type="button" value="7">
+      <input type="button" class="calculator__input" value="8">
+      <input type="button" class="calculator__input" value="9">
+      <input type="button" class="calculator__input" value="-">
+
+      <input type="button" class="calculator__input" value="6">
+      <input type="button" class="calculator__input" value="5">
+      <input type="button" class="calculator__input" value="4">
+      <input type="button" class="calculator__input" value="+">
+
+      <input type="button" class="calculator__input" value="1">
+      <input type="button" class="calculator__input" value="2">
+      <input type="button" class="calculator__input" value="3">
+
+      <input type="button" id="equal" value="=">
+      <input type="button" class="calculator__input" value="0">
+      <input type="button" class="calculator__input" value=".">
+    </div>
+  </div>
+
+  <footer class="footer">
+    JavaScript Calculator
+    <span>by <a class="footer__link" href="https://github.com/mrnko" target="_blank">Oleksii Myronenko</a> with ❤️ from
+      Ukraine</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

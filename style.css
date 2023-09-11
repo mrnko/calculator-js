@@ -1,0 +1,120 @@
+:root {
+  --background-color-first: #f9544c;
+  --background-color-second: #090c31;
+  --calculator-color: #15173c;
+  --input-placeholder-color: #9490ac;
+  --equal-color: #f9544c;
+  --button-hover-color: #000d2e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+  line-height: 1.9;
+  background: linear-gradient(to bottom, var(--background-color-first) 50%, var(--background-color-second) 50%);
+}
+
+.calculator {
+  width: 25rem;
+  background-color: var(--calculator-color);
+  padding: 3.125rem 1.875rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: .5rem;
+  box-shadow: 0 1.25 3.125 rgba(0, 5, 24, .4);
+}
+
+.calculator__display {
+  width: 100%;
+}
+
+.calculator__display-input {
+  width: 100%;
+  padding: .938rem .625rem;
+  text-align: right;
+  border: none;
+  background-color: transparent;
+  font-size: 2.188rem;
+}
+
+.calculator__display-input::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+.calculator__buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.calculator__buttons input[type="button"] {
+  font-size: 1.25rem;
+  padding: 1.063rem;
+  border: none;
+  background-color: transparent;
+  border-radius: .313rem;
+  cursor: pointer;
+  transition: all .08s ease;
+}
+
+.calculator__buttons input[type="button"]:hover {
+  box-shadow: 0 .5rem 1.563rem var(--button-hover-color);
+}
+
+.calculator__buttons input[type="button"]:active {
+  transform: scale(.96);
+}
+
+.calculator__buttons #equal {
+  grid-row: span 2;
+  background-color: var(--equal-color);
+}
+
+.calculator__buttons input[type="button"][value="0"] {
+  grid-column: span 2;
+}
+
+.footer {
+  position: absolute;
+  bottom: 1.25rem;
+  width: 100%;
+  text-align: center;
+  font-size: .688rem;
+  cursor: default;
+}
+
+.footer span {
+  display: block;
+}
+
+.footer__link:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 26.25rem) {
+  .calculator {
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transform: none;
+    border-radius: 0;
+    padding: 1.875rem .625rem;
+  }
+}
+
+@media (max-height: 45rem) {
+  .footer {
+    display: none;
+  }
+}
