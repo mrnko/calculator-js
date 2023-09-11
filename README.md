@@ -1,6 +1,6 @@
 # JavaScript Calculator
 
-[![OleksiiMyronenko - calculator-js](https://img.shields.io/static/v1?label=OleksiiMronenko&message=calculator-js&color=blue&logo=github)](https://github.com/mrnko/calculator-js "Go to GitHub repo")
+[![mrnko - calculator-js](https://img.shields.io/static/v1?label=mrnko&message=calculator-js&color=blue&logo=github)](https://github.com/mrnko/calculator-js "Go to GitHub repo")
 [![stars - calculator-js](https://img.shields.io/github/stars/mrnko/calculator-js?style=social)](https://github.com/mrnko/calculator-js)
 [![forks - calculator-js](https://img.shields.io/github/forks/mrnko/calculator-js?style=social)](https://github.com/mrnko/calculator-js)
 
